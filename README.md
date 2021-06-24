@@ -40,6 +40,8 @@ Example Parameter Usages:
 The command prompt parameter read from the file [parameter].application.config in the conf folder.
 
 ```
+local: Local Docker registry will be used. Do not use local for custom registry name in configuration file. This is reserved for local registry usage.
+
 dockerhub : Custom DockerHub registry configuration file will be used.
 
 registry-1 : Internet/Intranet Registry 1 configuration file will be used.
@@ -53,9 +55,12 @@ bash dic.sh -ydl dockerhub
 bash dic.sh -yd dockerhub
 bash dic.sh -dl dockerhub
 bash dic.sh -d dockerhub
+bash dic.sh -d local
 --------------------------------
 bash dic.sh -yul dockerhub
 bash dic.sh -ul dockerhub
+bash dic.sh -yu local
+bash dic.sh -u local
 --------------------------------
 bash dic.sh -h
 bash dic.sh -c
